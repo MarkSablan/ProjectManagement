@@ -87,23 +87,16 @@ nav ul li{
 	height: 65px;
 }
 
-#section-a #price{
-	float: right;
-	margin: 0;
-	padding: 0;
-	transform: translateY(-42px);
-}
-
 /*section b*/
 
 #section-b{
 	background-color: #eaeaea;
-	padding: 0 1.5em 1em;
+	padding: 0 0.5em 0.5em ;
 	margin: 0;
 }
 
 #section-b #preview{
-	height: 270px;
+	height: 260px;
 	border-radius: 3px;
 }
 
@@ -160,6 +153,11 @@ nav ul li{
 	text-align: left;
 	color: #333;
 	background-color: #eaeaea;
+}
+
+#section-e #price{
+	padding: 0;
+	margin: 0;
 }
 
 /*section f*/
