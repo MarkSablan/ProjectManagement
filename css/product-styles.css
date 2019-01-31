@@ -7,7 +7,6 @@ body{
 	color: #fff;
 	font-size: 1em;
 	line-height: 1.5em;
-	overflow-x: hidden;
 }
 
 img{
@@ -75,6 +74,7 @@ nav ul li{
 
 #showcase .content-wrap,
 #section-a .content-wrap,
+#section-b .content-wrap,
 #section-e .content-wrap{
 	padding: 0 1.5em;
 }
@@ -88,7 +88,10 @@ nav ul li{
 }
 
 #section-a #price{
-	transform: translate(90%, -60px);
+	float: right;
+	margin: 0;
+	padding: 0;
+	transform: translateY(-42px);
 }
 
 /*section b*/
@@ -100,7 +103,7 @@ nav ul li{
 }
 
 #section-b #preview{
-	height: 250px;
+	height: 270px;
 	border-radius: 3px;
 }
 
