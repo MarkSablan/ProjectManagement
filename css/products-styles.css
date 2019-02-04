@@ -220,3 +220,57 @@ nav img{
 }
 
 /*media query*/
+@media(min-width: 700px){
+
+	.grid{
+		display: grid;
+		grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+	}
+
+	.content-wrap,
+	#section-a .content-title,
+	#section-c ul{
+		grid-column: 2/4;
+	}
+
+	#section-b .content-wrap{
+		display: inline-block;
+	}
+
+	#section-b #item{
+		width: 200px;
+		height: 300px;
+		display: inline-block;
+		align-content: center;
+		margin: 1.5em 1em;
+	}
+	
+	#section-b #item-image{
+		width: 100%;
+		height: 200px;
+	}
+
+	#section-b #item #info,
+	#section-b #item #price
+	{
+		display: inline-block;
+		margin: 0;
+		text-align: center;
+	}
+
+	#section-b #info{
+		width: 100%;
+		/*border: 1px black solid;*/
+		padding: 0.5em 0;
+	}
+
+	#section-b #price{
+		padding: 0.1em 0;
+		/*border: 1px black solid;*/
+		width: 100%;
+	}
+
+	.box, #main-footer div{
+		grid-column: span 2;
+	}
+}
