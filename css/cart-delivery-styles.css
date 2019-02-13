@@ -1,0 +1,303 @@
+/* General Settings */
+body{
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;	
+	text-align: center;
+	background: #333;
+	color: #fff;
+	font-size: 1em;
+	line-height: 1.5em;
+	scroll-behavior: smooth;
+}
+
+img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+h1, h2, h3{
+	margin: 0;
+	padding: 1em 0;
+}
+
+p{
+	margin: 0;
+	padding: 1em 0;
+}
+
+.content-wrap{
+	padding: 0 1em;
+}
+
+/*navigation*/
+
+nav{
+	background-color: rgba(51, 51, 51, 0.4);
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+}
+
+nav .logo{
+	width: 55px;
+	height: 55px;
+	padding: 0 10px;
+	float: left;
+}
+
+nav ul{
+	list-style-type: none;
+	float: right;
+	margin: 0;
+	padding: 0 5px;
+}
+
+nav ul a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 0;
+	margin: 0; 
+}
+
+nav ul li:hover{
+	background-color: #eaeaea;
+	color: #333;
+	transition: 0.5s;
+}
+
+nav ul li{
+	float: left;
+	padding: 15px 5px;
+	margin: 0;
+	/*border-right: 1px #eaeaea solid;*/
+}
+
+
+nav img{
+	border-radius: 50%;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	padding: 0;
+}
+
+
+/*Sowcase*/
+
+#showcase{
+	min-height: 30vh;
+	color: #fff;
+	text-align: center;
+}
+
+#showcase .showcase-background{
+	position: absolute;
+	background: #eaeaea url(../img/slideshow/bakery.jpg);
+	width: 100%;
+	height: 30vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.5;
+	z-index: -1;
+}
+
+#showcase h2{
+	padding-top: 90px;
+	padding-bottom: 10px;
+}
+
+/*section-a Indicator*/
+
+#section-a{
+	/*height: 100px;*/
+	background-color: #e2e2e2;
+	padding: 0;
+}
+
+#section-a .indicator{
+	/*background: #333;*/
+	padding: 1.5em;
+	display: flex;
+	justify-content: center;
+}
+
+#section-a .indicator *{
+	/*display: inline-block;*/
+	margin: 0;
+}
+
+#section-a .indicator p{
+	/*background-color: #333;*/
+	color: #eaeaea;
+	/*width: 2em;*/
+	/*height: 2em;*/
+	padding: 1px;
+	border-radius: 50%;
+	border: 1px #000 solid;
+	line-height: 1.5em;
+}
+
+#section-a .indicator img{
+	width: 1.5em;
+	padding: 4px;
+}
+
+#section-a .indicator span{
+	/*background-color: green;*/
+	transform: translateY(210%);
+	height: 1px;
+	width: 27%;
+	border: 1px #000 solid;
+	border-left: none;
+	border-right: none;
+	padding: 2px 0;
+}
+
+#section-a .active{
+	background-color: green;
+}
+
+/*section-b form*/
+
+#section-b{
+	background-color: #e2e2e2;
+	color: #000;
+	text-align: left;
+}
+
+#section-b form{
+	padding: 10px 0;
+}
+/*title*/
+#section-b #title{
+	text-align: left;
+	background-color: #bfbfbf;
+}
+
+#section-b #title h4{
+	margin: 0;
+	padding: 1em 0;
+	text-transform: uppercase;
+}
+
+#section-b #basic-info,
+#section-b #delivery-method,
+#section-b #additional-info{
+	text-align: left;
+	border: 1px #bfbfbf solid;
+	margin-bottom: 10px;
+}
+
+#section-b #basic-info div{
+	position: relative;
+	padding: 0;
+	margin: 20px;
+}
+
+#section-b #basic-info div label{
+	position: absolute;
+	top: 7px;
+	left: 10px; 
+	transition: 0.5s;
+	color: #a6a6a6;
+	pointer-events: none;
+}
+
+#section-b #basic-info input{
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	margin: 0;
+	border: none;
+	outline: none;
+	background-color: #e2e2e2;
+	border-bottom: 1px #333 solid; 
+}
+
+#section-b #basic-info input:focus ~ label,
+#section-b #basic-info textarea:focus ~ label,
+#section-b #basic-info input:valid ~ label,
+#section-b #basic-info textarea:valid ~ label{
+	top: -20px;
+	left: -20px;
+	transform: scale(0.8);
+	color: #6d4a4a;
+	font-weight: bold;
+}
+
+#section-b input{
+	width: 20px;
+	height: 20px;
+	margin: 10px 10px; 
+}
+
+#section-b #additional-info textarea{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 200px;
+	resize: none;
+}
+
+#section-b input[type="submit"]{
+	width: 100%;
+	height: 50px;
+	margin: 0;
+	outline: none;
+	background-color: #29a329;
+	border: none;
+	color: #fff;
+	font-size: 16px;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: 0.5s;
+	text-align: center;
+}
+
+@media(min-width: 700px){
+	.grid{
+		margin: 0 15%;
+	}
+}
+
+@media(min-width: 1080px){
+	.grid2{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 140px 280px 100px;
+		column-gap: 1px;
+	}
+
+	#basic-info{
+		height: 452px;
+	}
+
+	#section-a1{
+		grid-column: 1/2;
+		grid-row: 1/4;
+	}
+
+	#section-a2{
+		grid-column: 2/3;
+		grid-row: 1/2;
+
+	}
+
+	#section-a3{
+		grid-column: 2/3;
+		grid-row: 2/4;
+	}
+
+	#section-b input[type="submit"]{
+		grid-column: 1/3;
+		grid-row: 4/5;
+	}
+
+
+}

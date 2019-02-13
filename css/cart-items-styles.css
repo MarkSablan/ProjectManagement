@@ -1,0 +1,312 @@
+/* General Settings */
+body{
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;	
+	text-align: center;
+	background: #333;
+	color: #fff;
+	font-size: 1em;
+	line-height: 1.5em;
+	scroll-behavior: smooth;
+}
+
+img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+h1, h2, h3{
+	margin: 0;
+	padding: 1em 0;
+}
+
+p{
+	margin: 0;
+	padding: 1em 0;
+}
+
+.content-wrap{
+	padding: 0 1em;
+}
+
+/*navigation*/
+
+nav{
+	background-color: rgba(51, 51, 51, 0.4);
+	position: fixed;
+	width: 100%;
+}
+
+nav .logo{
+	width: 55px;
+	height: 55px;
+	padding: 0 10px;
+	float: left;
+}
+
+nav ul{
+	list-style-type: none;
+	float: right;
+	margin: 0;
+	padding: 0 5px;
+}
+
+nav ul a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 0;
+	margin: 0; 
+}
+
+nav ul li:hover{
+	background-color: #eaeaea;
+	color: #333;
+	transition: 0.5s;
+}
+
+nav ul li{
+	float: left;
+	padding: 15px 5px;
+	margin: 0;
+	/*border-right: 1px #eaeaea solid;*/
+}
+
+
+nav img{
+	border-radius: 50%;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	padding: 0;
+}
+
+/*header Title*/
+#showcase{
+	min-height: 30vh;
+	color: #fff;
+	text-align: center;
+}
+
+#showcase .showcase-background{
+	position: absolute;
+	background: #eaeaea url(../img/slideshow/bakery.jpg);
+	width: 100%;
+	height: 30vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.5;
+	z-index: -1;
+}
+
+#showcase h2{
+	padding-top: 90px;
+	padding-bottom: 10px;
+}
+
+/*section-a Indicator*/
+
+#section-a{
+	/*height: 100px;*/
+	background-color: #e2e2e2;
+	padding: 0;
+}
+
+#section-a .indicator{
+	/*background: #333;*/
+	padding: 1.5em;
+	display: flex;
+	justify-content: center;
+}
+
+#section-a .indicator *{
+	/*display: inline-block;*/
+	margin: 0;
+}
+
+#section-a .indicator p{
+	/*background-color: #333;*/
+	color: #eaeaea;
+	/*width: 2em;*/
+	/*height: 2em;*/
+	padding: 1px;
+	border-radius: 50%;
+	border: 1px #000 solid;
+	line-height: 1.5em;
+}
+
+#section-a .indicator img{
+	width: 1.5em;
+	padding: 4px;
+}
+
+#section-a .indicator span{
+	/*background-color: green;*/
+	transform: translateY(210%);
+	height: 1px;
+	width: 27%;
+	border: 1px #000 solid;
+	border-left: none;
+	border-right: none;
+	padding: 2px 0;
+}
+
+#section-a .active{
+	background-color: green;
+}
+
+/*section-b - Items list*/
+
+#section-b{
+	background-color: #e2e2e2;
+	color: #000;
+}
+/*title*/
+#section-b #title{
+	text-align: left;
+	background-color: #bfbfbf;
+}
+
+#section-b #title h4{
+	margin: 0;
+	padding: 1em 0;
+	text-transform: uppercase;  
+}
+/*items*/
+#section-b .items{
+	background-color: #bfbfbf;
+	border: 1px #bfbfbf solid;
+}
+
+#section-b #item{
+	padding: 0;
+	margin: 1px 0;
+	/*width: 100%;*/
+	height: 75px;
+	display: grid;
+	grid-template-columns: 75px 3fr;
+	text-align: left;
+	background-color: #e2e2e2;
+	/*border: 2px green solid;*/
+}
+
+#section-b #item img{
+	width: 75px;
+	height: 75px;
+}
+
+#section-b #item #details{
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-rows: 22px 37.5px;
+}
+
+#section-b #item #details #item-name{
+	grid-column: 1/2;
+	padding: 0;
+	margin: 10px 0 0 0;
+	text-align: left;
+	/*background-color: red;*/
+	font-size: 14px;
+	padding: 0 1em;
+}
+
+#section-b #item #details #item-price{
+	padding: 0;
+	margin: 10px 0 0 0;
+	text-align: center;
+}
+
+#section-b #item #details #quantity-add{
+	grid-column: 1/2;
+}
+
+#section-b #item #details #quantity-add *{
+	display: inline-block;
+}
+
+#section-b #item #details #quantity-add{
+	margin: 0 1em;
+	font-size: 14px;
+}
+
+#section-b #item #details img{
+	width: 30px;
+	height: 30px;
+	transform: translateY(10px);
+}
+
+#section-b #item #details img:hover{
+	cursor: pointer;
+}
+
+#section-b #item #details #remove{
+	width: 20px;
+	height: 20px;
+	transform: translateY(20px);
+	margin: 0 auto;
+	transition: 0.5s;
+}
+
+#section-b #item #details #remove:hover{
+	transform: rotate(-180deg) translateY(-20px);
+}
+
+/*section-c Total and proceed*/
+
+#section-c{
+	margin: 0;
+	background-color: #e2e2e2;
+	color: #000;
+
+}
+
+#section-c #title{
+	text-align: left;
+	background-color: #bfbfbf;
+	border-top: 10px #e2e2e2 solid;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 1em 1em;
+	text-transform: uppercase; 
+}
+
+#section-c #price{
+	display: grid;
+	grid-template-columns: 1fr 1fr; 
+	border: 1px #bfbfbf solid;
+}
+
+#section-c #btn-proceed{
+	margin: 1em 0;
+	padding: 10px;
+	width: 100%;
+	outline: none;
+	background-color: #29a329;
+	border: none;
+	color: #fff;
+	font-size: 16px;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+#section-c #btn-proceed:hover{
+	background-color: #33cc33;
+	font-weight: bold;
+	transform: translateY(-3px);
+}
+
+@media(min-width: 700px){
+	.grid{
+		margin: 0 15%;
+	}
+
+	#section-c{
+		margin: 0 15%;
+	}
+}

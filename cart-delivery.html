@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cart</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/cart-delivery-styles.css">
+</head>
+<body>
+
+	<nav>
+		<a href="#section-b"><img src="./img/logo.jpg" class="logo" width="55px" height="55px"></a>
+		<ul>
+			<a href="#"><li>Home</li></a>
+			<a href="products.html"><li>Products</li></a>
+			<a href=""><li>My Cart</li></a>
+		</ul>
+	</nav>
+
+	<header id="showcase">
+		<div class="showcase-background"></div>
+		<div class="content-wrap">
+			<h2>Misis Sweet's Cake Shop</h2>
+		</div>
+	</header>
+
+	<main>
+
+		<section id="section-a" class="grid">
+			<div class="indicator">
+				<p class="active"><img src="./img/cart.png"></p>
+				<span class="active"></span>
+				<p class="active"><img src="./img/ship.png" alt=""></p>
+				<span class="active"></span>
+				<p><img src="./img/payment.png" alt=""></p>
+			</div>
+		</section>
+
+		<section id="section-b" class="grid content-wrap">
+		
+			<form class="grid2">
+				<!-- Biller's Info -->
+				<section id="section-a1">
+				<div id="title" class="content-wrap">
+					<h4>Biller Information</h4>
+				</div>
+
+				<div id="basic-info" class="content-wrap">
+				
+					<div>
+						<input type="text" name="first_name" required="">
+						<label>First Name</label>
+					</div>
+
+					<div>
+						<input type="text" name="last_name" required="">
+						<label>Last Name</label>
+					</div>
+
+					<div>
+						<input type="Email" name="customer_email" required="">
+						<label>Email Address</label>
+					</div>
+
+					<div>
+						<input type="text" name="contact_number" required="">
+						<label>Contact Number</label>
+					</div>
+
+					<div>
+						<input type="text" name="address" required="">
+						<label>Complete Address</label>
+					</div>
+
+				</div>
+
+				</section>
+				
+				<section id="section-a2">
+					<!-- Delivery Option -->
+					<div id="title" class="content-wrap">
+						<h4>Delivery Method</h4>
+					</div>
+
+					<div id="delivery-method" class="content-wrap">
+						<input type="radio" name="delivery-method" value="LalaMove">LalaMove<br/>
+						<input type="radio" name="delivery-method" value="Grab">Grab
+					</div>
+				</section>
+
+				<section id="section-a3">
+					<!-- Other Info -->
+					<div id="title" class="content-wrap">
+						<h4>Additional Information</h4>
+					</div>
+
+					<div id="additional-info" class="content-wrap">
+						<input type="radio" name="order-reserve" value="order">Order<br/>
+						<input type="radio" name="order-reserve" value="reserve">Reserve<br/>
+						<label>Request</label><br/>
+						<textarea id="request"></textarea>
+					</div>
+				</section>
+
+				<input type="submit" name="proceed-payment" value="Proceed to payment">
+			</form>
+
+		</section>
+
+		<section id="section-c" class="grid content-wrap">
+			<div id="title" class="content-wrap">
+				<h4>Additional Information</h4>
+			</div>
+		</section>
+		
+	</main>
+
+	<footer id="main-footer" class="grid">
+		<div>Lorem ipsum dolor sit amet, consectetur.</div>
+		<div>Lorem ipsum dolor sit amet, adipisicing elit. Consectetur, hic?</div>
+	</footer>
+	
+</body>
+</html>

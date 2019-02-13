@@ -31,6 +31,7 @@ nav{
 	background-color: rgba(51, 51, 51, 0.4);
 	width: 100%;
 	display: inline-block;
+	/*position: fixed;*/
 }
 
 nav .logo{
@@ -79,7 +80,7 @@ nav ul li{
 	padding: 0 1.5em;
 }
 
-/*section a*/
+/*section a Title*/
 #section-a{
 	text-align: left;
 	background-color: #eaeaea;
@@ -87,7 +88,7 @@ nav ul li{
 	height: 65px;
 }
 
-/*section b*/
+/*section b Preview*/
 
 #section-b{
 	background-color: #eaeaea;
@@ -100,7 +101,7 @@ nav ul li{
 	border-radius: 3px;
 }
 
-/*section c*/
+/*section c Preview Selece*/
 #section-c{
 	background-color: #eaeaea;
 	margin: 0;
@@ -124,7 +125,7 @@ nav ul li{
 	height: 60px;
 }
 
-/*section d*/
+/*section d Add to cart*/
 #section-d{
 	padding: 1em;
 	margin: 0;
@@ -148,7 +149,7 @@ nav ul li{
 	color: #333;
 }
 
-/*section e*/
+/*section e Price and Description*/
 #section-e{
 	text-align: left;
 	color: #333;
@@ -160,18 +161,68 @@ nav ul li{
 	margin: 0;
 }
 
-/*section f*/
+/*section f Suggestions*/
 
-#section-f *{
+#section-f{
+	padding: 1.5em;
+	margin: 1.5em 0 0 0;
+	text-align: center;
+	border-bottom: 1px #eaeaea solid;
+}
+
+#section-f #row{
+	margin-bottom: 1.5em;
+}
+
+#section-f ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+#section-f a{
+	text-decoration: none;
+	color: #333;
+}
+
+#section-f .card{
+	background-color: #eaeaea;
+	width: 100px;
+	height: 170px;
+	display: block;
+}
+
+#section-f img{
+	width: 100%;
+	height: 120px;
+}
+
+#section-f h5{
+	margin: 0;
+	padding: 0.5em;
+	line-height: 1.2em;
+}
+
+#section-f p{
+	padding: 0;
+	margin: 0;
+	position: relative;
+	bottom: 0;
+}
+
+/*section g Contact About*/
+#section-g *{
 	padding: 5px;
 	line-height: 1em;
 }
 
-#section-f .box{
+#section-g .box{
 	background-color: #6d4a4a;
 }
 
-#section-f .box:last-child{
+#section-g .box:last-child{
 	background-color: #333;
 }
 
@@ -192,7 +243,8 @@ nav ul li{
 	.content-wrap,
 	#section-b ul,
 	#section-a .content-title,
-	#section-c{
+	#section-c,
+	#section-f{
 		grid-column: 2/4;
 	}
 
@@ -203,6 +255,14 @@ nav ul li{
 	#section-c img{
 		width: 90px;
 		height: 90px;
+	}
+
+	#section-f #row{
+		display: inline-block;
+		width: 40%;
+		margin: 0 0.2em;
+		margin-bottom: 1.5em;
+
 	}
 	
 	.box, #main-footer div{

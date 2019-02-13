@@ -127,15 +127,14 @@ nav img{
 #section-b #item{
 	display: flex;
 	margin: 0.5em 0;
-	background-color: #eaeaea;
-	/*border-top: 1px #333 solid;*/
+	background-color: #e2e2e2;
+	border-bottom: 1px #333 solid;
 	/*border-right: 2px #6d4a4a solid;*/
-	box-shadow: 1px 1px 1px 1px #333;
 }
 
 #section-b #item-image{
-	width: 5em;
-	height: 5em;
+	width: 105px;
+	height: 105px;
 }
 
 #section-b #info{
@@ -234,7 +233,8 @@ nav img{
 	}
 
 	#section-b .content-wrap{
-		display: inline-block;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
 	}
 
 	#section-b #item{
@@ -243,6 +243,7 @@ nav img{
 		display: inline-block;
 		align-content: center;
 		margin: 1.5em 1em;
+		margin-right: 1px #eaeaea solid;
 	}
 	
 	#section-b #item-image{
