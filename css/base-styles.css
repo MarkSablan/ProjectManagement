@@ -1,0 +1,224 @@
+body{
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;	
+	text-align: center;
+	background: #333;
+	color: #fff;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+h1, h2, h3{
+	margin: 0;
+	padding: 1em 0;
+}
+
+p{
+	margin: 0;
+	padding: 1em 0;
+}
+
+.content-wrap{
+	padding: 0 1.5em;
+}
+
+/*navigation*/
+
+nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	/*background-color: rgba(51, 51, 51, 0.4);*/
+	padding: 0 10px;
+	margin: 0;
+	box-sizing: border-box;
+	text-align: left;
+	z-index: 1000;
+	transition: 0.5s;
+}
+
+nav.scrolled{
+	background-color: #6d4a4a;
+	height: 60px;
+	padding: 0 20px;
+	transition: 0.5s;
+	/*transition-delay: 0.5s;*/
+}
+
+nav.scrolled #logo img{
+	width: 60px;
+	height: 60px;
+	transform: rotate(360deg);
+}
+
+nav.scrolled ul li{
+	animation-delay: 3s;
+	animation: bounce 0.5s linear;
+}
+
+nav.scrolled ul li a{
+	line-height: 60px;
+}
+
+@keyframes bounce{
+	0%{
+		transform: translateY(0);
+	}
+
+	40%{
+		transform: translateY(-10px);
+		
+	}
+
+	80%{
+		transform: translateY(5px);
+		
+	}
+
+	100%{
+		transform: translateY(0);
+	}
+}
+
+#logo img{
+	width: 80px;
+	height: 80px;
+	float: left;
+	border-radius: 50%;
+	transition: 0.5s;
+}
+
+nav ul{
+	float: right;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	transition: 0.5s;
+}
+
+nav ul li:hover{
+	transform: translateX(-2px);
+	background-color: #eaeaea;
+}
+
+nav ul li:hover a{
+	color: #333;
+}
+
+nav ul li a{
+	margin: 0;
+	padding: 40px 10px;
+	line-height: 80px;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	transition: 0.5s;
+}
+
+/*Showcase*/
+
+#showcase{
+	min-height: 100vh;
+	color: #fff;
+	text-align: center;
+}
+
+#showcase .showcase-background{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+	z-index: -1;
+	background: #333 url(../img/slideshow/bakery.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#showcase-small{
+	min-height: 30vh;
+	color: #fff;
+	text-align: center;
+}
+
+#showcase-small .showcase-background{
+	position: absolute;
+	background: #eaeaea url(../img/slideshow/bakery.jpg);
+	width: 100%;
+	height: 30vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.5;
+	z-index: -1;
+}
+
+#showcase-small h2{
+	padding-top: 110px;
+	padding-bottom: 10px;
+}
+
+/*section-a Indicator*/
+
+#section-a{
+	/*height: 100px;*/
+	background-color: #e2e2e2;
+	padding: 0;
+}
+
+#section-a .indicator{
+	padding: 1.5em;
+	display: flex;
+	justify-content: center;
+}
+
+#section-a .indicator *{
+	/*display: inline-block;*/
+	margin: 0;
+}
+
+#section-a .indicator p{
+	/*background-color: #333;*/
+	color: #eaeaea;
+	/*width: 2em;*/
+	/*height: 2em;*/
+	padding: 1px;
+	border-radius: 50%;
+	border: 1px #000 solid;
+	line-height: 1.5em;
+}
+
+#section-a .indicator img{
+	width: 1.5em;
+	padding: 4px;
+}
+
+#section-a .indicator span{
+	/*background-color: green;*/
+	transform: translateY(210%);
+	height: 1px;
+	width: 27%;
+	border: 1px #000 solid;
+	border-left: none;
+	border-right: none;
+	padding: 2px 0;
+}
+
+#section-a .active{
+	background-color: green;
+}
