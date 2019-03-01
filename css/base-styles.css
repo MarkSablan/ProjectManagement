@@ -48,15 +48,13 @@ nav{
 nav.scrolled{
 	background-color: #6d4a4a;
 	height: 60px;
-	padding: 0 20px;
-	transition: 0.5s;
+	transition: 1s;
 	/*transition-delay: 0.5s;*/
 }
 
 nav.scrolled #logo img{
 	width: 60px;
 	height: 60px;
-	transform: rotate(360deg);
 }
 
 nav.scrolled ul li{
@@ -121,7 +119,7 @@ nav ul li:hover a{
 
 nav ul li a{
 	margin: 0;
-	padding: 40px 10px;
+	padding: 40px 5px;
 	line-height: 80px;
 	text-decoration: none;
 	color: #fff;

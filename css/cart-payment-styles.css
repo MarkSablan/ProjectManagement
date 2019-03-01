@@ -1,0 +1,88 @@
+/*section-b*/
+
+h1,h2,h3,h4,h5,h6{
+	margin: 0.5em 0;
+}
+
+p{
+	font-size: 13px;
+	color: #333;
+}
+
+#section-b{
+	background-color: #e2e2e2;
+	color: #000;
+	text-align: left;
+	transition: 0.5s;
+	padding-bottom: 1em;
+}
+
+.important-orange{
+	background-color: #ffaa11;
+	padding: 1em;
+}
+
+.important-green{
+	background-color: #00ff55;
+	padding: 1em;
+}
+
+#verify-sec{
+	width: 250px;
+	margin: 1em 0;
+	position: relative;
+	text-align: center;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/*title*/
+#section-b #title{
+	text-align: left;
+	background-color: #bfbfbf;
+}
+
+#section-b #title h4{
+	margin: 0;
+	padding: 1em 0;
+	text-transform: uppercase;
+}
+
+#section-b #instruction{
+	text-align: left;
+	border: 1px #bfbfbf solid;
+	margin-bottom: 10px;
+}
+
+#home{
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	margin: 1em 0;
+	padding: 10px 0;
+	width: 100%;
+	outline: none;
+	background-color: #29a329;
+	border: none;
+	color: #fff;
+	font-size: 16px;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+#home:hover{
+	background-color: #33cc33;
+	font-weight: bold;
+	transform: translateY(-3px);
+}
+
+@media(min-width: 700px){
+	.grid{
+		margin: 0 15%;
+	}
+
+	#section-c{
+		margin: 0 15%;
+	}
+}

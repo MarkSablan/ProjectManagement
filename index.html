@@ -6,16 +6,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/base-styles.css">
 	<link rel="stylesheet" href="./css/index-styles.css">
+	<link rel="stylesheet" href="./css/swiper.css">
+	<link rel="icon" href="./img/logo.jpg">
+	<script type="text/javascript" src="./lib/swiper.js"></script>
 	<script type="text/javascript" src="./lib/jquery.js"></script>
-<!-- 	<script type="text/javascript" src="./lib/jquery-mobile.js"></script> -->
+	<!-- <script type="text/javascript" src="./lib/jquery-mobile.js"></script> -->
 	<script type="text/javascript" src="./scripts/general-script.js"></script>
-
+	<!-- <div id="fb-root"></div> -->
+	<script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+	<div style="width: 600px;">
+</div>
 </head>
 <body>
 	
 	<nav>
 		<div id="logo"><a href="#section-b"><img src="./img/logo.jpg" class="logo" width="55px" height="55px"></a></div>
-		
 		<ul>
 			<li><a href="#">Home</a></li>
 			<li><a href="products.html">Products</a></li>
@@ -83,14 +88,59 @@
 			</ul>
 		</section>
 		
-		<!-- section c -->
+		<!-- section c -Facebook page -->
 		<section id="section-c" class="grid">
 			<div class="content-wrap">
-				<h2 class="content-title">Lorem Ipsum</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium harum, quam, aliquam animi cumque nobis perspiciatis illum voluptatem possimus vero pariatur enim, voluptas nihil, ducimus dolore veniam ea! Molestias, sint.</p>
+				<h2 class="content-title">Like Our Facebook Page</h2>
+				<div class="fb-page" data-href="https://web.facebook.com/Misis-sweets-2142727305988587" data-tabs="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://web.facebook.com/Misis-sweets-2142727305988587" class="fb-xfbml-parse-ignore"><a href="https://web.facebook.com/Misis-sweets-2142727305988587">Misis sweets</a></blockquote></div>
 			</div>
 		</section>
+
+		<!-- Verify Section -->
 		
+		<section id="verify" class="grid">
+			<h3>Verify Payment</h3>
+			<!-- <div class="swiper-container">
+			    <div class="swiper-wrapper">
+
+			      	<a href="" class="swiper-slide">
+			      		<h4 id="customer-name">Name</h4>
+			      		<p>date ordered</p>
+			      		<p>items</p>
+			      	</a>
+			      	
+			      	<a href="" class="swiper-slide">
+			      		<h4 id="customer-name">Name</h4>
+			      		<p>date ordered</p>
+			      		<p>items</p>
+			      	</a>
+			    </div> -->
+    			<!-- Add Pagination -->
+    			<!-- <div class="swiper-pagination"></div> -->
+  			<!-- </div> -->
+
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			      <div class="swiper-slide">
+			      	<div>
+			      		<h3>Name</h3>
+			      		<p>info</p>
+			      		<p>info</p>
+			      	</div>
+			      </div>
+			      <div class="swiper-slide">Slide 2</div>
+			    </div>
+			    <!-- Add Pagination -->
+			    <div class="swiper-pagination"></div>
+			    <!-- Add Arrows -->
+			    <div class="swiper-button-next"></div>
+			    <div class="swiper-button-prev"></div>
+			</div>
+			
+  			<a href="#" id="view-all">View all</a>
+		</section>
+		<script type="text/javascript" src="./scripts/swiper.js"></script>
+
 		<!-- section d -->
 
 		<section id="section-d" class="grid">

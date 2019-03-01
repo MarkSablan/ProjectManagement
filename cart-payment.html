@@ -5,21 +5,23 @@
 	<title>Cart-Payment</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/cart-payment-styles.css">
+	<link rel="stylesheet" type="text/css" href="./css/base-styles.css">
 	<script type="text/javascript" src="./lib/jquery.js"></script>
 	<script type="text/javascript" src="./scripts/general-script.js"></script>
 </head>
 <body>
 
 	<nav>
-		<a href="#section-b"><img src="./img/logo.jpg" class="logo" width="55px" height="55px"></a>
+		<div id="logo"><a href="#section-b"><img src="./img/logo.jpg" class="logo" width="55px" height="55px"></a></div>
+		
 		<ul>
-			<a href="#"><li>Home</li></a>
-			<a href="products.html"><li>Products</li></a>
-			<a href=""><li>My Cart</li></a>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a href="cart-items.html">My Cart</a></li>
 		</ul>
 	</nav>
 
-	<header id="showcase">
+	<header id="showcase-small">
 		<div class="showcase-background"></div>
 		<div class="content-wrap">
 			<h2>Misis Sweet's Cake Shop</h2>
@@ -34,8 +36,50 @@
 				<span class="active"></span>
 				<p class="active"><img src="./img/ship.png" alt=""></p>
 				<span class="active"></span>
-				<p><img src="./img/payment.png" alt=""></p>
+				<p class="active"><img src="./img/payment.png" alt=""></p>
 			</div>
+		</section>
+
+		<section id="section-b" class="grid content-wrap">
+			<div id="title" class="content-wrap">
+				<h4>Proceed To Payment</h4>
+			</div>
+
+			<div id="instruction" class="content-wrap">
+				<h5>Dear Customer</h5>
+
+				<p>You may now proceed to make the payment amounting to PHP<span id="amount" style="display: inline">1500</span> as per your order, thru our authorized payment centers/channels as listed below: </p>
+
+				<h5>-Bank Account</h5>
+				<h6>Account name: Sheila Santos</h6>
+				<h6>Account number: 0000-0000-0000</h6>
+				
+				<br/>
+
+				<h5>-Thru Remittance</h5>
+				<h6>Name: Sheila Santos</h6>
+				<h6>Address: Karangalan, Pasig</h6>
+				<h6>Contact no: 09xx xxxx xxx</h6>
+
+				<br/>
+
+				<h5>Kindly pay the exact amount of PHP<span id="amount" style="display: inline">1500</span></h5>
+
+				<p>In case we did not recieve the required amount, seven (7) calendar days thereafter, the order will be considered as void/cancelled</p>
+				
+				<h4>Important!!</h4>
+
+				<p class="important-orange">After the payment, please do not forget to scan or take a picture of slip and send it to the verification page of this website or thru official facebook page/account via messenger. We will provide you a verification code that act as your temporary account.</p>
+				
+				<div id="verify-sec" class="important-green">
+					<h3>Your Verification Code:</h3>
+					<h4 id="verify-code">AX-B0-DD-89-7M</h4>
+				</div>
+
+				<p>We will send a copy of this to your email so kindly please check your email. Thanks!</p>
+			</div>
+
+			<a href="index.html" id="home">Home</a>
 		</section>
 
 	</main>
