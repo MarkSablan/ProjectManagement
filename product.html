@@ -6,8 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/base-styles.css">
 	<link rel="stylesheet" href="./css/product-styles.css">
+	<link rel="stylesheet" href="./css/swiper.css">
 	<script type="text/javascript" src="./lib/jquery.js"></script>
 	<script type="text/javascript" src="./scripts/general-script.js"></script>
+	<script type="text/javascript" src="./lib/swiper.js"></script>
 </head>
 <body>
 
@@ -15,7 +17,7 @@
 		<div id="logo"><a href="#section-b"><img src="./img/logo.jpg" class="logo" width="55px" height="55px"></a></div>
 		
 		<ul>
-			<li><a href="#">Home</a></li>
+			<li><a href="index.html">Home</a></li>
 			<li><a href="products.html">Products</a></li>
 			<li><a href="cart-items.html">My Cart</a></li>
 		</ul>
@@ -38,14 +40,33 @@
 		</section>
 		
 		<!-- preview -->
+
+		<section id="test" class="grid">
+			<section id="preview-container">
+				<div class="preview-image">
+					<img src="./img/products/choco-moist-cake.jpg" alt="choco-moist-cake" id="preview">
+				</div>
+
+				<div class="select-container">
+					<ul>
+						<li><img src="./img/products/choco-moist-cake.jpg"></li>
+						<li><img src="./img/products/choco-moist-cake2.jpg"></li>
+						<li><img src="./img/products/choco-moist-cake3.jpg"></li>
+					</ul>
+				</div>
+			</section>
+
+		</section>
+
+<!-- 
 		<section id="section-b" class="grid">
 			<div class="content-wrap">
 				<img src="./img/products/choco-moist-cake.jpg" alt="choco-moist-cake" id="preview">
 			</div>
-		</section>
+		</section> -->
 
 		<!-- preview select -->
-		<section id="section-c" class="grid">
+		<!-- <section id="section-c" class="grid">
 			<div class="content-wrap">
 				<ul>
 					<li><img src="./img/products/choco-moist-cake.jpg"></li>
@@ -53,7 +74,7 @@
 					<li><img src="./img/products/choco-moist-cake3.jpg"></li>
 				</ul>
 			</div>
-		</section>
+		</section> -->
 		
 		<!-- Add to cart -->
 		<section id="section-d" class="grid">
@@ -74,9 +95,54 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum suscipit optio voluptates iusto, vero facere consequuntur, est praesentium sed quo labore? Libero voluptatum autem, non amet quibusdam est repellat, nesciunt quam ut omnis ex dolores accusamus quia odio repellendus facilis id sed placeat, animi exercitationem aliquid! Dolor in deserunt, voluptatem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, totam animi unde delectus quia sit. Maxime, itaque, praesentium. Quidem, officiis ullam at nostrum beatae accusantium enim assumenda! Beatae a voluptatibus dignissimos quisquam laborum sit ex assumenda tempore esse pariatur maiores error accusamus, suscipit porro aut. Nemo ipsa optio, nobis perspiciatis facilis vero amet. Fuga molestias quas distinctio laboriosam adipisci earum.</p>
 			</div>
 		</section>
+
+		<section id="section-f" class="grid">
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			      	<div class="swiper-slide">
+			      		<div>
+				      		<a href="#">
+							<div class="card">
+								<img id="sug-pic" src="./img/products/dulse-de-leche.jpg">
+								<h5 id="sug-name">Dulse de Leche</h5>
+							</div>
+							</a>
+			      		</div>
+			      	</div>
+			   		<div class="swiper-slide">
+			      		<div>
+				      		<a href="#">
+							<div class="card">
+								<img id="sug-pic" src="./img/products/dulse-de-leche.jpg">
+								<h5 id="sug-name">Dulse de Leche</h5>
+							</div>
+							</a>
+			      		</div>
+			      	</div>
+			      	<div class="swiper-slide">
+			      		<div>
+				      		<a href="#">
+							<div class="card">
+								<img id="sug-pic" src="./img/products/dulse-de-leche.jpg">
+								<h5 id="sug-name">Dulse de Leche</h5>
+							</div>
+							</a>
+			      		</div>
+			      	</div>
+			    </div>
+			    <!-- Add Pagination -->
+			    <!-- <div class="swiper-pagination"></div> -->
+			    <!-- Add Arrows -->
+			    <div class="swiper-button-next"></div>
+			    <div class="swiper-button-prev"></div>
+			</div>
+
+			<script type="text/javascript" src="./scripts/swiper.js"></script>
+
+		</section>
 		
 		<!-- Suggestions -->
-		<section id="section-f" class="grid">
+		<!-- section id="section-f" class="grid">
 			<div class="content-wrap">
 			<div id="row">
 				<ul>
@@ -85,7 +151,6 @@
 							<div class="card">
 								<img id="sug-pic" src="./img/products/dulse-de-leche.jpg">
 								<h5 id="sug-name">Dulse de Leche</h5>
-								<!-- <p id="sug-price">10$</p> -->
 							</div>
 						</a>
 					</li>
@@ -94,7 +159,6 @@
 							<div class="card">
 								<img id="sug-pic" src="./img/products/banana-cake.jpg">
 								<h5 id="sug-name">Banana Cake</h5>
-								<!-- <p id="sug-price">5$</p> -->
 							</div>
 						</a>
 					</li>
@@ -103,7 +167,6 @@
 							<div class="card">
 								<img id="sug-pic" src="./img/products/blueberry-cheesecake.jpg">
 								<h5 id="sug-name">Blueberry Cheesecake</h5>
-								<!-- <p id="sug-price">15$</p> -->
 							</div>
 						</a>
 					</li>
@@ -117,7 +180,6 @@
 							<div class="card">
 								<img id="sug-pic" src="./img/products/custard-cake.jpg">
 								<h5 id="sug-name">Custard Cake</h5>
-								<!-- <p id="sug-price">10$</p> -->
 							</div>
 						</a>
 					</li>
@@ -126,7 +188,6 @@
 							<div class="card">
 								<img id="sug-pic" src="./img/slideshow/bread.jpg">
 								<h5 id="sug-name">Cinnamon Bread</h5>
-								<!-- <p id="sug-price">5$</p> -->
 							</div>
 						</a>
 					</li>
@@ -135,14 +196,13 @@
 							<div class="card">
 								<img id="sug-pic" src="./img/slideshow/bakery2.jpg">
 								<h5 id="sug-name">Lorem ipsum dolor sit.</h5>
-								<!-- <p id="sug-price">15$</p> -->
 							</div>
 						</a>
 					</li>
 				</ul>
 			</div>
 			</div>
-		</section>
+		</section> -->
 
 		<section id="section-g" class="grid">
 			<div class="box">

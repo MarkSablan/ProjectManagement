@@ -220,3 +220,38 @@ nav ul li a{
 #section-a .active{
 	background-color: green;
 }
+
+.no-close .ui-dialog-titlebar-close {
+  display: none;
+}
+
+.ui-dialog{
+  border-radius: 3px;
+  width: 500px;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+#dialog{
+  border-radius: 7px;
+}
+
+.ui-dialog-content{
+  background-color: rgba(156, 156, 156, 0.85);
+  text-align: center;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.ui-button{
+  float: right;
+  background-color: none;
+  border: none;
+}
+
+.ui-dialog-titlebar{
+  text-align: left;
+  padding: 5px;
+  background-color: grey;
+}

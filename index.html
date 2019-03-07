@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
 	<title>Misis Sweet's Bake Shop</title>
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="./img/logo.jpg">
+
+	<link rel="stylesheet" href="./css/jquery-ui.css">
 	<link rel="stylesheet" href="./css/base-styles.css">
 	<link rel="stylesheet" href="./css/index-styles.css">
-	<link rel="stylesheet" href="./css/swiper.css">
-	<link rel="icon" href="./img/logo.jpg">
-	<script type="text/javascript" src="./lib/swiper.js"></script>
+	<link rel="stylesheet" href="./css/flickity.css" media="screen">
+	
 	<script type="text/javascript" src="./lib/jquery.js"></script>
-	<!-- <script type="text/javascript" src="./lib/jquery-mobile.js"></script> -->
-	<script type="text/javascript" src="./scripts/general-script.js"></script>
-	<!-- <div id="fb-root"></div> -->
+	<script type="text/javascript" src="./lib/jquery-ui.js"></script>
+	<script type="text/javascript" src="./lib/flickity.js"></script>
 	<script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
 	<div style="width: 600px;">
 </div>
@@ -36,17 +37,91 @@
 		</div>
 	</header>
 
-	<main>
+	<main>		
+		<section id="verify" class="grid">
+			<h2>Verify Payment</h2>
+
+			<div class="carousel" data-flickity='{ "autoPlay": true }'>
+				<div class="carousel-cell">
+					<div class="title">
+						<h5 id="name">Name</h5>
+					</div>
+					<div class="info">
+						<h5>Valid Until</h5>
+						<p id="validity">08-09-2019</p>
+						<p id="email">example@email.com</p>	
+					</div>
+					<button onclick="showDialog('#verify-dialog', 100, 200)">Verify now</button>
+				</div>
+
+				<div class="carousel-cell">
+					<div class="title">
+						<h5 id="name">Name</h5>
+					</div>
+					<div class="info">
+						<h5>Valid Until</h5>
+						<p id="validity">08-09-2019</p>
+						<p id="email">example@email.com</p>	
+					</div>
+					<button onclick="showDialog('#verify-dialog', 100, 100)">Verify now</button>				</div>
+
+				<div class="carousel-cell">
+					<div class="title">
+						<h5 id="name">Name</h5>
+					</div>
+					<div class="info">
+						<h5>Valid Until</h5>
+						<p id="validity">08-09-2019</p>
+						<p id="email">example@email.com</p>	
+					</div>
+					<button onclick="showDialog('#verify-dialog', 100, 100)">Verify now</button>
+				</div>
+
+				<div class="carousel-cell">
+					<div class="title">
+						<h5 id="name">Name</h5>
+					</div>
+					<div class="info">
+						<h5>Valid Until</h5>
+						<p id="validity">08-09-2019</p>
+						<p id="email">example@email.com</p>	
+					</div>
+					<button onclick="showDialog('#verify-dialog', 100, 100)">Verify now</button>
+				</div>
+
+				<div class="carousel-cell">
+					<div class="title">
+						<h5 id="name">Name</h5>
+					</div>
+					<div class="info">
+						<h5>Valid Until</h5>
+						<p id="validity">08-09-2019</p>
+						<p id="email">example@email.com</p>	
+					</div>
+					<button onclick="showDialog('#verify-dialog', 100, 100)">Verify now</button>
+				</div>
+			</div>
+
+			<div class="content-wrap"><a href="verify-list.html" class="view-all">View All</a></div>
+
+			<div id="verify-dialog" title="test" style="display: none">
+				<h3>Enter Verification Code</h3>
+				<input type="text" name="">
+				<input type="submit" name="" value="Submit">
+				<button onclick="closeDialog('#verify-dialog')">Cancel</button>
+			</div>
+		</section>
+
 		<!-- Featured Title -->
 		<section id="section-a" class="grid">
 			<h2 class="content-title">Featured Products</h2>
 			<div class="content-wrap">
 				<div class="content-text">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam corrupti, itaque eveniet saepe quidem hic quos quasi libero, voluptate ad modi dicta aut delectus totam! Id deleniti adipisci quae expedita!</p>
+					<p>These are the top selling products Misis Sweet's Cakeshop.</p>
 				</div>
 			</div>
 		</section>
-		
+
 		<!-- Featured Items -->
 		<section id="section-b" class="grid">
 			<ul>
@@ -96,51 +171,6 @@
 			</div>
 		</section>
 
-		<!-- Verify Section -->
-		
-		<section id="verify" class="grid">
-			<h3>Verify Payment</h3>
-			<!-- <div class="swiper-container">
-			    <div class="swiper-wrapper">
-
-			      	<a href="" class="swiper-slide">
-			      		<h4 id="customer-name">Name</h4>
-			      		<p>date ordered</p>
-			      		<p>items</p>
-			      	</a>
-			      	
-			      	<a href="" class="swiper-slide">
-			      		<h4 id="customer-name">Name</h4>
-			      		<p>date ordered</p>
-			      		<p>items</p>
-			      	</a>
-			    </div> -->
-    			<!-- Add Pagination -->
-    			<!-- <div class="swiper-pagination"></div> -->
-  			<!-- </div> -->
-
-			<div class="swiper-container">
-			    <div class="swiper-wrapper">
-			      <div class="swiper-slide">
-			      	<div>
-			      		<h3>Name</h3>
-			      		<p>info</p>
-			      		<p>info</p>
-			      	</div>
-			      </div>
-			      <div class="swiper-slide">Slide 2</div>
-			    </div>
-			    <!-- Add Pagination -->
-			    <div class="swiper-pagination"></div>
-			    <!-- Add Arrows -->
-			    <div class="swiper-button-next"></div>
-			    <div class="swiper-button-prev"></div>
-			</div>
-			
-  			<a href="#" id="view-all">View all</a>
-		</section>
-		<script type="text/javascript" src="./scripts/swiper.js"></script>
-
 		<!-- section d -->
 
 		<section id="section-d" class="grid">
@@ -162,6 +192,8 @@
 		<div>Lorem ipsum dolor sit amet, consectetur.</div>
 		<div>Lorem ipsum dolor sit amet, <a href="cart-items.html">test</a> adipisicing elit. Consectetur, hic?</div>
 	</footer>
+
+	<script type="text/javascript" src="./scripts/general-script.js"></script>
 	
 </body>
 </html>
