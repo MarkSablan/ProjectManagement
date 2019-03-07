@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Verification-list</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="./css/jquery-ui.css">
+	<link rel="stylesheet" href="./css/verification-list-styles.css">
+	<link rel="stylesheet" href="./css/flickity.css" media="screen">
+	<link rel="stylesheet" href="./css/base-styles.css">
+
+	<!-- <link rel="stylesheet" href="./css/cart-items-styles.css"> -->
+	<script type="text/javascript" src="./lib/jquery.js"></script>
+	<script type="text/javascript" src="./lib/jquery-ui.js"></script>
+	<script type="text/javascript" src="./lib/flickity.js"></script>
+
+</head>
+<body>
+
+	<nav>
+		<div id="logo"><a href="#section-b"><img src="./img/logo.jpg" class="logo" width="55px" height="55px"></a></div>
+		
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a href="cart-items.html">My Cart</a></li>
+		</ul>
+	</nav>
+
+	<header id="showcase-small" class="showcase-small">
+		<div class="showcase-background"></div>
+		<div class="content-wrap">
+			<h2>Misis Sweet's Cake Shop</h2>
+		</div>
+	</header>
+
+	<main>
+
+		<section id="section-b" class="grid content-wrap">
+			
+			<div id="title" class="content-wrap">
+				<h4>Pending For Verification</h4>
+			</div>
+
+			<div class="items">
+				<div class="entry">
+					<div class="image"></div>
+					<div class="side-info">
+						<div class="title">
+							<h4 class="name">Name</h4>
+						</div>
+						<h5>Valid Until</h5>
+						<p id="validity">08-09-2019</p>
+						<p id="email">example@email.com</p>	
+						<div class="bottom">
+							<button onclick="showDialog('#verify-dialog', 120, 180)">Verify now</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="entry">
+					<div class="image"></div>
+					<div class="side-info">
+						<div class="title">
+							<h4 class="name">Name</h4>
+						</div>
+						<h5>Valid Until</h5>
+						<p id="validity">08-09-2019</p>
+						<p id="email">example@email.com</p>	
+						<div class="bottom">
+							<button onclick="showDialog('#verify-dialog', 120, 180)">Verify now</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="verify-dialog" title="Enter Verification Code" style="display: none">
+				<form>
+					<input type="text" name="">
+					<input type="submit" name="" value="Submit">
+				</form>
+				<button onclick="closeDialog('#verify-dialog')">Cancel</button>
+			</div>
+
+		</section>
+		
+	</main>
+
+	<script type="text/javascript" src="./scripts/general-script.js"></script>
+	
+
+	<footer id="main-footer" class="grid">
+		<div>Lorem ipsum dolor sit amet, consectetur.</div>
+		<div>Lorem ipsum dolor sit amet,<a href="cart-delivery.html">Lorem ipsum dolor sit.</a> adipisicing elit. Consectetur, hic?</div>
+	</footer>
+	
+</body>
+</html>
