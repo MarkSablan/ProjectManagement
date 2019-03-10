@@ -53,7 +53,6 @@
 /*section d Add to cart*/
 #section-d{
 	padding: 1em;
-	margin: 0;
 }
 
 #section-d input{
@@ -168,41 +167,18 @@
 		grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
 	}
 
-	#preview-container{
-		display: grid;
-		grid-template-columns: 1fr 80px;
-	}
-
-	#preview-container .content-wrap{
-		grid-column: 1/2;
-	}
-
-	#test .preview-container{
-		display: block;
-	}
-
-	#test .select-container ul{
-		position: relative;
-		height: 100%;
-		margin: 0;
-		top: 20%;
-	}
-
-	#test .select-container ul li{
-		margin: 0.5em 0;
-	}
-
-	#test #preview-container{
-		margin-bottom: 1.5em;
-	}
-
 	.content-wrap,
 	#section-b ul,
 	#section-a .content-title,
 	#section-c,
 	#section-f .swiper-container,
-	#test #preview-container{
+	#test .preview{
 		grid-column: 2/4;
+	}
+
+	.carousel-cell{
+		width: 400px;
+		height: 400px;
 	}
 
 	#section-b #preview{
@@ -229,28 +205,67 @@
 
 #test{
 	background-color: #eaeaea;
+	padding-bottom: 1em;	
 }
 
-#test .preview-image{
-	padding: 0 1.5em;
+.carousel {
+  background: #eaeaea;
+  margin-bottom: 10px;
+  /*border-radius: 10px;*/
 }
 
-#test .select-container ul{
-	list-style-type: none;/*
-	background-color: blue;*/
+.carousel-cell {
+  width: 330px;
+  height: 300px;
+  margin-right: 5px;
+  background-color: #eaeaea;
+  /*border-radius: 5px;*/
+}
+
+.carousel-cell img{
+	width: 100%;
+	height: 97%;
+}
+
+.carousel-nav .carousel-cell {
+  height: 80px;
+  width: 100px;
+}
+
+.carousel-nav .carousel-cell.is-nav-selected {
+  background: #29a329;
+}
+
+#section-f .carousel{
+	background-color: #333;
+}
+
+#section-f .carousel-cell{
+	width: 200px;
+	height: 200px;
+	margin-right: 10px;
+}
+
+#section-f .carousel-cell img{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#section-f .carousel-cell .sug-desc{
+	position: absolute;
+	z-index: 100;
+	background: rgba(0, 0, 0, 0.8);
+	bottom: 0;
 	padding: 0;
-}
-#test .select-container li{
-	margin: 1em 1em;
-	padding: 0;
-	display: inline-block;
+	width: 100%;
+	height: 3em;
 }
 
-#test .select-container img{
-	width: 80px;
-	height: 80px;
+#section-f .carousel-cell .sug-desc p{
+	line-height: 3em;
+	font-weight: bold;
+	font-size: 14px;
+	color: #fff;
 }
 
-.swiper-slide{
-
-}

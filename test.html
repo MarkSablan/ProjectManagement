@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tests</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body{
+			padding: 0 1em;
+			margin: 0;
+			text-align: center;
+		}
+
+		.title{
+			background-color: #eaeaea;
+			color: #333;
+			padding: 0.5em;
+			font-size: 30px;
+		}
+
+		.indicator{
+			background: #333;
+			padding: 1.5em;
+			display: flex;
+			justify-content: center;
+		}
+
+		.indicator *{
+			/*display: inline-block;*/
+			margin: 0;
+		}
+
+		.indicator p{
+			/*background-color: #333;*/
+			color: #eaeaea;
+			width: 2em;
+			height: 2em;
+			border-radius: 50%;
+			border: 2px #eaeaea solid;
+			line-height: 1.5em;
+		}
+
+		.indicator img{
+			width: 1.5em;
+			padding: 4px;
+		}
+
+		.indicator span{
+			/*background-color: green;*/
+			transform: translateY(210%);
+			height: 1px;
+			width: 27%;
+			border: 1px #fff solid;
+			border-left: none;
+			border-right: none;
+			padding: 2px 0;
+		}
+
+		.active{
+			background-color: green;
+		}
+
+		.pagination{
+			padding: 1.5em 0;
+			background-color: #333;
+		}
+
+		.pagination ul{
+			padding: 0 1em;
+			list-style-type: none;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.pagination li{
+			border: 2px #eaeaee solid;
+			width: 1em;
+			height: 1em;
+			line-height: 1em;
+			color: #eaeaea;
+			border-radius: 10%;
+			font-size: 20px;
+		}
+
+		.pagination li:hover{
+			cursor: pointer;
+			background-color: green;
+		}
+
+		.pagination img{
+		
+		}
+
+		.list{
+			text-align: left;
+			background-color: #eaeaea;
+			border-top: 1px solid black;
+			border-bottom: 1px solid black;
+		}
+
+		.list #item{
+			display: flex;
+			margin: 0.5em 0;
+			background-color: #eaeaea;
+			/*border-top: 1px #333 solid;*/
+			/*border-right: 2px #6d4a4a solid;*/
+			box-shadow: 1px 1px 1px 1px #333;
+		}
+
+		.list #item-image{
+			width: 5em;
+			height: 5em;
+		}
+
+		.list #info{
+			/*border: 1px black solid;*/
+			width: 70%;
+			padding: 1em 0;
+		}
+
+		.list #info *{
+			/*padding: 5px;*/
+			margin: 0;
+		}
+
+		.list #info #item-description{
+			font-size: 12px;
+			padding: 0.8em 1px;
+			line-height: 0.5em;
+		}
+
+		.list #price{
+			/*border: 1px black solid;*/
+			padding: 1em 0;
+		}
+
+		@media(min-width: 700px){
+			.pagination{
+				padding: 1.5em 20%;
+			}
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="title">Indicator</div>
+
+	<div class="indicator">
+		<p class="active"><img src="./img/cart.png"></p>
+		<span class="active"></span>
+		<p><img src="./img/payment.png" alt=""></p>
+		<span></span>
+		<p><img src="./img/ship.png" alt=""></p>
+	</div>
+	
+	<div class="title">Pagination</div>
+
+	<div class="pagination">
+		<ul>
+			<li><<</li>
+			<li><</li>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>></li>
+			<li>>></li>
+		</ul>
+	</div>
+
+	<div class="title">Item List</div>
+
+	<div class="list">
+		<div id="item">
+			<img src="img/products/blueberry-cheesecake.jpg" id="item-image">
+			<div id="info">
+				<h4 id="item-name">Lorem ipsum dolor.</h4>
+				<p id="item-description">Lorem ipsum dolor sit</p>
+			</div>
+			<div id="price">$4</div>
+		</div>
+
+		<div id="item">
+			<img src="img/products/banana-cake.jpg" id="item-image">
+			<div id="info">
+				<h4 id="item-name">Lorem ipsum dolor.</h4>
+				<p id="item-description">Lorem ipsum dolor sit</p>
+			</div>
+			<div id="price">$4</div>
+		</div>
+
+		<div id="item">
+			<img src="img/products/brownies (1).jpg" id="item-image">
+			<div id="info">
+				<h4 id="item-name">Lorem ipsum dolor.</h4>
+				<p id="item-description">Lorem ipsum dolor sit</p>
+			</div>
+			<div id="price">$4</div>
+		</div>
+
+		<div id="item">
+			<img src="img/products/brownies (3).jpg" id="item-image">
+			<div id="info">
+				<h4 id="item-name">Lorem ipsum dolor.</h4>
+				<p id="item-description">Lorem ipsum dolor sit</p>
+			</div>
+			<div id="price">$4</div>
+		</div>
+
+		<div id="item">
+			<img src="img/products/brownies (4).jpg" id="item-image">
+			<div id="info">
+				<h4 id="item-name">Lorem ipsum dolor.</h4>
+				<p id="item-description">Lorem ipsum dolor sit</p>
+			</div>
+			<div id="price">$4</div>
+		</div>
+
+		<div id="item">
+			<img src="img/products/brownies (5).jpg" id="item-image">
+			<div id="info">
+				<h4 id="item-name">Lorem ipsum dolor.</h4>
+				<p id="item-description">Lorem ipsum dolor sit</p>
+			</div>
+			<div id="price">$4</div>
+		</div>
+
+		<div id="item">
+			<img src="img/products/brownies-cas (1).jpg" id="item-image">
+			<div id="info">
+				<h4 id="item-name">Lorem ipsum dolor.</h4>
+				<p id="item-description">Lorem ipsum dolor sit</p>
+			</div>
+			<div id="price">$4</div>
+		</div>
+
+		<div id="item">
+			<img src="img/products/brownies-cas (2).jpg" id="item-image">
+			<div id="info">
+				<h4 id="item-name">Lorem ipsum dolor.</h4>
+				<p id="item-description">Lorem ipsum dolor sit</p>
+			</div>
+			<div id="price">$4</div>
+		</div>
+
+		<div id="item">
+			<img src="img/products/brownies-gooey (1).jpg" id="item-image">
+			<div id="info">
+				<h4 id="item-name">Lorem ipsum dolor.</h4>
+				<p id="item-description">Lorem ipsum dolor sit</p>
+			</div>
+			<div id="price">$4</div>
+		</div>
+
+		<div id="item">
+			<img src="img/products/brownies-gooey (2).jpg" id="item-image">
+			<div id="info">
+				<h4 id="item-name">Lorem ipsum dolor.</h4>
+				<p id="item-description">Lorem ipsum dolor sit</p>
+			</div>
+			<div id="price">$4</div>
+		</div>
+	</div>
+
+
+	<div class="responsive">
+		<div id="image" class="grid"></div>
+		<div id="preview" class="grid"></div>
+	</div>
+
+</body>
+</html>

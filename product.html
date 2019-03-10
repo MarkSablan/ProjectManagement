@@ -4,12 +4,13 @@
 	<meta charset="UTF-8">
 	<title>Product</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/flickity.css" media="screen">
 	<link rel="stylesheet" href="./css/base-styles.css">
 	<link rel="stylesheet" href="./css/product-styles.css">
-	<link rel="stylesheet" href="./css/swiper.css">
+
+
 	<script type="text/javascript" src="./lib/jquery.js"></script>
-	<script type="text/javascript" src="./scripts/general-script.js"></script>
-	<script type="text/javascript" src="./lib/swiper.js"></script>
+	<script type="text/javascript" src="./lib/flickity.js"></script>
 </head>
 <body>
 
@@ -42,20 +43,21 @@
 		<!-- preview -->
 
 		<section id="test" class="grid">
-			<section id="preview-container">
-				<div class="preview-image">
-					<img src="./img/products/choco-moist-cake.jpg" alt="choco-moist-cake" id="preview">
+			<div class="preview content-wrap">
+				<div class="carousel carousel-main" id="preview" data-flickity = '{
+				"pageDots": false}'>
+				  <div class="carousel-cell"><img class="img-cell" src="./img/products/choco-moist-cake.jpg"></div>
+				  <div class="carousel-cell"><img class="img-cell" src="./img/products/choco-moist-cake2.jpg"></div>
+				  <div class="carousel-cell"><img class="img-cell" src="./img/products/choco-moist-cake3.jpg"></div>
 				</div>
 
-				<div class="select-container">
-					<ul>
-						<li><img src="./img/products/choco-moist-cake.jpg"></li>
-						<li><img src="./img/products/choco-moist-cake2.jpg"></li>
-						<li><img src="./img/products/choco-moist-cake3.jpg"></li>
-					</ul>
+				<div class="carousel carousel-nav"
+				  data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false, "prevNextButtons": false }'>
+				  <div class="carousel-cell"><img class="img-cell" src="./img/products/choco-moist-cake.jpg"></div>
+				  <div class="carousel-cell"><img class="img-cell" src="./img/products/choco-moist-cake2.jpg"></div>
+				  <div class="carousel-cell"><img class="img-cell" src="./img/products/choco-moist-cake3.jpg"></div>
 				</div>
-			</section>
-
+			</div>
 		</section>
 
 <!-- 
@@ -97,48 +99,43 @@
 		</section>
 
 		<section id="section-f" class="grid">
-			<div class="swiper-container">
-			    <div class="swiper-wrapper">
-			      	<div class="swiper-slide">
-			      		<div>
-				      		<a href="#">
-							<div class="card">
-								<img id="sug-pic" src="./img/products/dulse-de-leche.jpg">
-								<h5 id="sug-name">Dulse de Leche</h5>
-							</div>
-							</a>
-			      		</div>
-			      	</div>
-			   		<div class="swiper-slide">
-			      		<div>
-				      		<a href="#">
-							<div class="card">
-								<img id="sug-pic" src="./img/products/dulse-de-leche.jpg">
-								<h5 id="sug-name">Dulse de Leche</h5>
-							</div>
-							</a>
-			      		</div>
-			      	</div>
-			      	<div class="swiper-slide">
-			      		<div>
-				      		<a href="#">
-							<div class="card">
-								<img id="sug-pic" src="./img/products/dulse-de-leche.jpg">
-								<h5 id="sug-name">Dulse de Leche</h5>
-							</div>
-							</a>
-			      		</div>
-			      	</div>
-			    </div>
-			    <!-- Add Pagination -->
-			    <!-- <div class="swiper-pagination"></div> -->
-			    <!-- Add Arrows -->
-			    <div class="swiper-button-next"></div>
-			    <div class="swiper-button-prev"></div>
+			<div class="carousel" data-flickity='{"contain": true, "pageDots": false, "prevNextButtons": true }' >
+				<div class="carousel-cell">
+					<img src="./img/products/dulse-de-leche.jpg">
+					<div class="sug-desc">
+						<p>Dulse de Leche</p>
+					</div>
+				</div>
+
+				<div class="carousel-cell">
+					<img src="./img/products/banana-cake.jpg">
+					<div class="sug-desc">
+						<p>Banana-cake</p>
+					</div>
+				</div>
+
+				<div class="carousel-cell">
+					<img src="./img/products/custard-cake.jpg">
+					<div class="sug-desc">
+						<p>Custard Cake</p>
+					</div>
+				</div>
+
+				<div class="carousel-cell">
+					<img src="./img/products/blueberry-cheesecake.jpg">
+					<div class="sug-desc">
+						<p>Blueberry Cheesecake</p>
+					</div>
+				</div>
+
+				<div class="carousel-cell">
+					<img src="./img/products/brownies (8).jpg">
+					<div class="sug-desc">
+						<p>Brownies</p>
+					</div>
+				</div>
+
 			</div>
-
-			<script type="text/javascript" src="./scripts/swiper.js"></script>
-
 		</section>
 		
 		<!-- Suggestions -->
@@ -217,6 +214,8 @@
 			</div>
 		</section>
 	</main>
+
+	<script type="text/javascript" src="./scripts/general-script.js"></script>
 
 	<footer id="main-footer" class="grid">
 		<div>Lorem ipsum dolor sit amet, consectetur.</div>

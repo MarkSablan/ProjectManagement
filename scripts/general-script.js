@@ -7,8 +7,10 @@ $(window).on('scroll', function(){
 })
 
 $("document").ready( function(){
-	$(".carousel").flickity();	
+	// $(".verify").flickity();
+	// $('.carousel').flickity();
 })
+
 
 function showDialog(dialog, width, height){
 	$(dialog).dialog({

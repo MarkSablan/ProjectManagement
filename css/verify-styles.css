@@ -101,3 +101,15 @@ input[type="submit"]{
 		transform: translateX(-50%);
 	}
 }
+
+@media(min-width: 980px){
+	.image-preview{
+		width: 60%;
+	}
+}
+
+@media(min-width: 1020px){
+	.image-preview{
+		width: 50%;
+	}
+}
