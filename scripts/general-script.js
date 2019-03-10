@@ -7,9 +7,7 @@ $(window).on('scroll', function(){
 })
 
 $("document").ready( function(){
-	$(".carousel").flickity();
-
-	
+	$(".carousel").flickity();	
 })
 
 function showDialog(dialog, width, height){
@@ -25,3 +23,22 @@ function showDialog(dialog, width, height){
 function closeDialog(dialog){
 	$(dialog).dialog("destroy");
 }
+
+// Preview upload image
+
+function readURL(input) {
+
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+
+    reader.onload = function(e) {
+      $('.image-preview').attr('src', e.target.result);
+    }
+
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+
+$("#imgInput").change(function() {
+  readURL(this);
+});
